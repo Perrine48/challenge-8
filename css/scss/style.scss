@@ -1,0 +1,141 @@
+.grande {
+    max-width: 500px;
+    max-height: 400px;
+}
+
+.moyenne {
+    max-width: 500px;
+    max-height: 250px;
+}
+
+.petite {
+    max-width: 80px;
+    max-height: 60px;
+    border-radius: 5px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    h1{
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+    nav {
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+
+    h2 {
+        grid-column: 2/3;
+        grid-row: 3;
+    }
+    p{
+        grid-column: 2/3;
+        grid-row: 4;
+    }
+    .first{
+        grid-column: 2/3;
+        grid-row: 5;
+    }
+    a {
+        grid-column: 2/3;
+        grid-row: 6;
+    }
+}
+
+main {
+    #first{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        #one{
+            grid-column : 2/4;
+            grid-row: 1;
+        }
+        #two{
+            grid-column: 2/4;
+            grid-row: 2;
+        }
+        #three{
+            grid-column: 2/4;
+            grid-row: 3;
+        }
+        #four{
+            grid-column: 2/4;
+            grid-row: 4;
+        }
+        #five{
+            grid-column: 1/4;
+            grid-row: 5;
+        }
+        #six{
+            grid-column: 1/4;
+            grid-row: 6;
+        }
+    }
+    #second {
+        display: grid;
+        // grid-template-rows: 50vw;
+        grid-template-columns: 1fr;
+        h4{
+            grid-column: 1/4;
+            grid-row: 1;
+        }
+        p{
+            grid-column: 1/4;
+            grid-row: 2;
+        }
+        #sectionone{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-row: 3;
+        #premier {
+            grid-column: 1/4;
+            grid-row: 1;
+
+        }
+        #deuxieme {
+
+                grid-column: 1/4;
+                grid-row: 2;
+
+        }
+        #troisieme {
+
+                grid-column: 1/4;
+                grid-row: 3;
+            }
+        }
+            a{
+                grid-column: 1/4;
+                grid-row: 4;
+            }
+}
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    #uno {
+        grid-column: 1/5;
+        grid-row: 1;
+    }
+    #dos {
+        grid-column: 1/5;
+        grid-row: 2;
+        .petite :nth-child(even){
+            grid-column: 3/4
+        }
+    }
+    #tres {
+        grid-column: 1/5;
+        grid-row: 3;
+        .petite :nth-child(even){
+            grid-column: 3/4
+        }
+    }
+    #down {
+        grid-column: 1/5;
+        grid-row: 4;
+        text-align: center;
+    }
+}
